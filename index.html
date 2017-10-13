@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>resume</title>
+  <style>
+  body {
+    background-color: darkgrey;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+  }
+  .figure-item {
+    flex: 1 1 100px;
+    justify-content: space-around;
+  }
+  .figure-item figure {
+    width: 100px;
+  }
+  .figure-item img {
+    width: 80px;
+  }
+  .container-item {
+    background: hsla(0,0%,100%,.3);
+    border-radius: 10px;
+    margin: 20px;
+    flex: 1 1 100px;
+    /* flex item 最好不要设置 width, 用 flex-basis 或 min-width */
+    min-width: 100px;
+    padding: 20px;
+  }
+  .container-item ul, .container-item dl {
+    list-style-type: none;
+    padding: 0;
+  }
+  .longer-item {
+    flex: 2 1 400px;
+  }
+  </style>
+
+  <script>
+      // Add a global error event listener early on in the page load, to help ensure that browsers
+      // which don't support specific functionality still end up displaying a meaningful message.
+      window.addEventListener('error', function(error) {
+          console.error(error);
+          alert(error.message + 'Your browser may not support this feature.');
+          error.preventDefault();
+      });
+    </script>
+</head>
+
+<body>
+<section>
+    <h1><a href="xx.github.io/resume/">关于我</a></h1> 
+    <section class="container">
+     <section class="figure-item">
+        <figure>
+            <a href="xx.github.io/resume/"><img src="gh.jpg" alt="my figure"></a>
+        </figure>
+      </section>
+      <section class="container-item">
+        <h5>联系方式</h5>
+        <ul>
+          <li>姓名: wxq</li>
+          <li>邮件</li>
+          <li>城市</li>
+          <li>电话</li>
+          <li>个人主页</li>
+        </ul>
+      </section>
+      <section class="container-item">
+        <h5>语言技能</h5>
+        <ul>
+          <li>英文：六级</li>
+          <li>CSS: 熟练</li>
+          <li>HTML: 熟练</li>
+          <li>JS: 熟练</li>
+        </ul>
+      </section>
+      <section class="longer-item container-item">
+          <h5>项目</h5>
+          <ul>
+            <li>
+              <dl>
+                <dt>2016-2017：U3D游戏</dt>
+                <dd>技术 U3D，渲染算法</dd>
+                <dd>详情：竞技类单机游戏</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>2017：个人简历</dt>
+                <dd>技术 HTML, CSS, JS</dd>
+                <dd>详情：电子版个人简历，发布在GitHub
+                </dd>
+              </dl>
+            </li>
+          </ul>
+      </section>
+      <section class="longer-item container-item">
+          <h5>项目</h5>
+          <ul>
+            <li>
+              <dl>
+                <dt>2017：UC Web</dt>
+                <dd>浏览器前端</dd>
+                <dd>详情：定制浏览器首页</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>2017-2018：腾讯</dt>
+                <dd>游戏页面前端</dd>
+                <dd>游戏运营前端</dd>
+              </dl>
+            </li>
+          </ul>
+      </section>
+    </section>
+<section>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceworker.js');
+}
+</script>
+</body>
+</html>
